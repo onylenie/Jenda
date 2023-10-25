@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('D:\\KeyFolder\\folder.jks')
+            storePassword '124578A'
+            keyAlias 'key'
+            keyPassword '124578A'
+        }
+    }
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.lifecycle"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildFeatures {
+        viewBinding true
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+    namespace 'com.example.appraspisanie'
+}
+
+dependencies {
+
+    def nav_version = '1.0.0'
+
+    implementation "android.arch.navigation:navigation-fragment:$nav_version"
+
+    implementation "android.arch.navigation:navigation-ui:$nav_version"
+
+    androidTestImplementation "android.arch.navigation:navigation-testing:$nav_version"
+
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation files('libs/poi-3.7.jar')
+    implementation 'androidx.annotation:annotation:1.5.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

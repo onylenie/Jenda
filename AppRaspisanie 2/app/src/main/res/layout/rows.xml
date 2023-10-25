@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="1.">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/check"
+            android:layout_toEndOf="@+id/num"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Фамилия очень длинная">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_alignStart="@+id/text1"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="-1dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:text="Имя Отчество очень очень    длинные и сложные">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="5dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:text="404 к1" />
+
+</RelativeLayout>

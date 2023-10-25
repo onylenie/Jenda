@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/adminChose">
+    <activity
+        android:id="@+id/adminChose"
+        android:name="com.example.appraspisanie.AdminChose"
+        android:label="AdminChose" />
+    <activity
+        android:id="@+id/confirmNewUser"
+        android:name="com.example.appraspisanie.ConfirmNewUser"
+        android:label="ConfirmNewUser" />
+</navigation>
