@@ -13,8 +13,8 @@ import java.util.HashMap;
 
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class VariablesList {
-    //protected static String Sait = "http://domenforwork.atwebpages.com/";
-    protected static String Sait = "https://2soc.ru/m/";
+    protected static String Sait = "http://domenforwork.atwebpages.com/";
+    //protected static String Sait = "https://2soc.ru/m/";
     //protected static String Sait = "http://schedule.pkgod.ru/m/";
 
     protected static String kod; //код из БД

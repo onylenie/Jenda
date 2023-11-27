@@ -98,14 +98,14 @@ public class RegistrationForm extends Activity {
         }
         else er3.setVisibility(View.INVISIBLE);
         //группа
-        if (groups.getSelectedItem().toString().equals(allGroups.get(0)))
+        /*if (groups.getSelectedItem().toString().equals(allGroups.get(0)))
         {
             error =1;
             er4.setVisibility(View.VISIBLE);
         }
         else {
             er4.setVisibility(View.INVISIBLE);
-        }
+        }*/
 
         if (error==0) {
             fname = name.getText().toString();
